@@ -3,3 +3,11 @@
   padding: 5%;
   height: 5%;
 }
+
+navbar {
+  background-color: white;
+}
+
+.content {
+  background-color: lightgray;
+}
