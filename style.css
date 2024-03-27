@@ -22,7 +22,7 @@ border: none;
 
 }
 
-#projectDropdown {
+#projectDropdown, #profileDropdown {
   text-decoration: none;
   color: black;
 }
