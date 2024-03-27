@@ -11,3 +11,12 @@ navbar {
 .content {
   background-color: lightgray;
 }
+
+.no-border {
+border: none;
+}
+
+/* Style for list items */
+.list-group-item {
+  border: none; /* Remove border from list items */
+}
