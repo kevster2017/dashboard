@@ -4,6 +4,10 @@
   height: 5%;
 }
 
+#dashboard {
+  background-color: rgb(249, 246, 246);
+}
+
 navbar {
   background-color: white;
 }
