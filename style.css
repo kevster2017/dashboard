@@ -34,3 +34,20 @@ i {
 .leftNav:hover {
   background-color: rgb(244, 200, 244);
 }
+
+/* Order Cards */
+#revenue {
+  background-color: rgb(196, 162, 255);
+}
+
+#orders {
+  background-color: aliceblue;
+}
+
+#deliveries {
+  background-color: rgb(244, 171, 214);
+}
+
+#customers {
+  background-color: rgb(247, 194, 213);
+}
