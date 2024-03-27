@@ -19,4 +19,10 @@ border: none;
 /* Style for list items */
 .list-group-item {
   border: none; /* Remove border from list items */
+
+}
+
+#projectDropdown {
+  text-decoration: none;
+  color: black;
 }
