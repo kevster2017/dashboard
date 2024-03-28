@@ -40,6 +40,14 @@ i {
 }
 
 /* Order Cards */
+
+.cardImage {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 #revenue {
   background-color: rgb(196, 162, 255);
 }
