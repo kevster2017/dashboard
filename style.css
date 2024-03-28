@@ -79,9 +79,14 @@ i {
 background-color: purple;
 }
 
-tr {
-  margin-bottom: 4px;
+.shipped {
+  color: green;
 }
-tr:hover {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+.processing {
+  color: purple;
+}
+
+.cancelled {
+  color: red;
 }
