@@ -67,3 +67,14 @@ i {
 .card {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.btn-rounded {
+  border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+}
+
+#ordersButton {
+background-color: purple;
+}
