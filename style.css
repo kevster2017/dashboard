@@ -38,6 +38,12 @@ i {
   margin-right: 2%;
 }
 
+.fa-card {
+  font-size: 40px;
+  padding-top: 20%;
+  padding-bottom: 20%;;
+}
+
 .leftNav:hover {
   background-color: rgb(244, 200, 244);
 }
