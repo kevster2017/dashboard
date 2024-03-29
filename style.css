@@ -99,3 +99,18 @@ background-color: purple;
 .cancelled {
   color: red;
 }
+
+@media (max-width: 576px) {
+  /* Apply styles only on small screens */
+  .leftNav {
+    display: none; /* Hide the left navigation items */
+  }
+  .dashboard {
+    margin-top: 1rem; /* Add margin to the dashboard heading */
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
