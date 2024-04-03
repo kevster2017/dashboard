@@ -30,142 +30,156 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2 me-2">
-          <div class="container mb-3">
-
-            <h1 class="dashboard pt-4">Dashboard</h1>
-          </div>
-          <ul class="list-group no-border">
-            <li class="list-group-item leftNav"><span>   <i class="fa-solid fa-gauge"></i> <a href="dashboard.html"> Dashboards</a></span></li>
-            <li class="list-group-item leftNavdropdown"> <!-- Added dropdown class -->
-              <a class="dropdown-toggle" href="#" role="button" id="projectDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bars-progress"></i> Project
-              </a>             
-                
-              <ul class="dropdown-menu" aria-labelledby="projectDropdown">
-                <li><a class="dropdown-item leftNav" href="#">Pipeline Projects</a></li>
-                <li><a class="dropdown-item leftNav" href="#">Internal Projects</a></li>
-                <li><a class="dropdown-item leftNav" href="#">External Projects</a></li>
-              </ul>
-            </li>
-            <li class="list-group-item leftNav"><a class="dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-large"></i> Profile</a>
-              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item leftNav" href="#">Sign In</a></li>
-                <li><a class="dropdown-item leftNav" href="#">Register</a></li>
-                <li><a class="dropdown-item leftNav" href="#">Reset Password</a></li>
-              </ul>
-            <li class="list-group-item leftNav"><i class="fa-solid fa-user-group"></i> Team</li>
-            <li class="list-group-item leftNav"><i class="fa-solid fa-cart-shopping"></i><a href="orders.html">  Orders</a></li>
-            <li class="list-group-item leftNav"><i class="fa-solid fa-file-invoice"></i> Account</li>
-   
-          </ul>
+    <div class="container-fluid p-0 d-flex h-100">
+      <div
+        id="bdSidebar"
+        class="d-flex flex-column flex-shrink-0 p-3 bg-white text-black offcanvas-md offcanvas-start"
+      >
+        <div class="container mb-3">
+          <h1 class="dashboard pt-4">Dashboard</h1>
         </div>
-        <div class="col">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Dashboards</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">E-Commerce</a>
-                  </li>
-                </ul>
-               
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <div class="row align-items-center"> <!-- Align items center to vertically center content -->
-                      <div class="col">
-                        <img src="images/avatar.jpg" id="avatar" class="img-fluid rounded-circle" style="width: auto; height: 75px;">
-                      </div>
-                      <div class="col">
-                        <h6 class="mt-2">Bloggs, J</h6>
-                        <a href="#" class="text-decoration-none">Account settings</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+        <hr />
+
+        <ul class="mynav nav nav-pills flex-column mb-auto">
+          <li class="nav-item mb-1">
+            <a href="#">
+              <i class="fa-solid fa-gauge"></i><a href="dashboard.html"> Dashboards
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+            href="#"
+            class="sidebar-link collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#projects"
+            aria-expanded="false"
+            aria-controls="projects"
+          >
+              <i class="fa-solid fa-bars-progress"></i> Projects <i class="fa-solid fa-caret-down ms-1"></i>
+            </a>             
+          
+            <ul class="sidebar-dropdown list-unstyled collapse mt-2"
+            data-bs-parent="#sidebar"
+id="projects" aria-labelledby="projectDropdown">
+              <li><a class="dropdown-item leftNav mb-2" href="#">Pipeline Projects</a></li>
+              <li><a class="dropdown-item leftNav mb-2" href="#">Internal Projects</a></li>
+              <li><a class="dropdown-item leftNav mb-2" href="#">External Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a
+            href="#"
+            class="sidebar-link collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#profile"
+            aria-expanded="false"
+            aria-controls="profile"
+          >
+<i class="fa-solid fa-user-large"></i> Profile <i class="fa-solid fa-caret-down ms-1"></i></a>
+              <ul class="sidebar-dropdown list-unstyled collapse mt-2"
+              data-bs-parent="#sidebar"
+ id="profile" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item leftNav mb-2" href="#">Sign In</a></li>
+                <li><a class="dropdown-item leftNav mb-2" href="#">Register</a></li>
+                <li><a class="dropdown-item leftNav mb-2" href="#">Reset Password</a></li>
+              </ul>
+          </li>
+
+          <li class="nav-item mb-1">
+            <a href="#">
+              <i class="fa-solid fa-user-group"></i> Team
+            </a>
+          </li>
+          <li class="nav-item mb-1">
+            <a href="orders.html">
+              <i class="fa-solid fa-cart-shopping"></i>  Orders
+            </a>
+          </li>
+          <li class="nav-item mb-1">
+            <a href="#">
+              <i class="fa-solid fa-file-invoice"></i> Account
+            </a>
+          </li>
+        </ul>
+        <hr />
+      </div>
+
+      <!-- Navbar -->
+      <div class="container-fluid">
+
+        <!-- Hidden Navbar -->
+        <div class="p-2 d-md-none d-flex text-white bg-success">
+          <a
+            href="#"
+            class="text-white"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#bdSidebar"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <span class="ms-3">Dashboard</span>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg ps-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">E-Commerce</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sidebar.html">Sidebar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dbsidebar.html">DBSidebar</a>
+              </li>
+            </ul>
+
                  
-            
-              </div>
-            </div>
-          </nav>
-          <div class="container-fluid pt-5" id="dashboard">
-            <div class="container-fluid">
-              <div class="container-fluid">
-                <div class="row row-cols-2 row-cols-md-4 g-4">
-                  <!-- First card -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <div class="row align-items-center"> <!-- Align items center to vertically center content -->
                   <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row g-0">
-                        <div class="col-md-4 col-12">
-                          <div class="cardImage align-items-center" id="revenue">
-                            <i class="fa-solid fa-card fa-sterling-sign"></i>
-                          </div>
-                      
-                        </div>
-                        <div class="col-md-8 col-12">
-                          <div class="card-body">
-                            <h6 class="card-title">Revenue</h6>
-                            <h5 class="card-text">£202k</h5>
-                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <img src="images/avatar.jpg" id="avatar" class="img-fluid rounded-circle" style="width: auto; height: 75px;">
                   </div>
-                    <!-- Second card -->
-                    <div class="col">
-                      <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4 col-12">
-                            <div class="cardImage align-items-center" id="orders">
-                              <i class="fa-solid fa-card fa-tag"></i>
-                            </div>
-                        
-                          </div>
-                          <div class="col-md-8 col-12">
-                            <div class="card-body">
-                              <h6 class="card-title">Orders</h6>
-                              <h5 class="card-text">719</h5>
-                          
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                      <!-- Third card -->
+                  <div class="col">
+                    <h6 class="mt-2">Bloggs, J</h6>
+                    <a href="#" class="text-decoration-none">Account settings</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+     
+          <div class="row">
+            <div class="col">
+              <div class="container-fluid pt-5 ps-3" id="dashboard">
+                <div class="container-fluid">
+                  <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-4 g-4">
+                      <!-- First card -->
                       <div class="col">
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row g-0">
-                            <div class="col-md-4">
-                              <div class="cardImage" id="deliveries">
-                                <i class="fa-solid fa-card fa-truck-front"></i>
-                                
+                            <div class="col-md-4 col-12">
+                              <div class="cardImage align-items-center" id="revenue">
+                                <i class="fa-solid fa-card fa-sterling-sign"></i>
                               </div>
                           
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-12">
                               <div class="card-body">
-                                <h6 class="card-title">Deliveries</h6>
+                                <h6 class="card-title">Revenue</h6>
                                 <h5 class="card-text">£202k</h5>
                             
                               </div>
@@ -173,150 +187,194 @@
                           </div>
                         </div>
                       </div>
-                    <!-- Fourth card -->
-                    <div class="col">
-                      <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <div class="cardImage align-items-center" id="customers">
-                              <i class="fa-solid fa-card fa-user-group"></i>
-                            </div>
-                        
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h6 class="card-title">Customers</h6>
-                              <h5 class="card-text">1.5k</h5>
-                          
+                        <!-- Second card -->
+                        <div class="col">
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4 col-12">
+                                <div class="cardImage align-items-center" id="orders">
+                                  <i class="fa-solid fa-card fa-tag"></i>
+                                </div>
+                            
+                              </div>
+                              <div class="col-md-8 col-12">
+                                <div class="card-body">
+                                  <h6 class="card-title">Orders</h6>
+                                  <h5 class="card-text">719</h5>
+                              
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                          <!-- Third card -->
+                          <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <div class="cardImage" id="deliveries">
+                                    <i class="fa-solid fa-card fa-truck-front"></i>
+                                    
+                                  </div>
+                              
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h6 class="card-title">Deliveries</h6>
+                                    <h5 class="card-text">£202k</h5>
+                                
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- Fourth card -->
+                        <div class="col">
+                          <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <div class="cardImage align-items-center" id="customers">
+                                  <i class="fa-solid fa-card fa-user-group"></i>
+                                </div>
+                            
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h6 class="card-title">Customers</h6>
+                                  <h5 class="card-text">1.5k</h5>
+                              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
-                </div>
-              </div>
-
-              <div class="row mt-3">
-                <div class="d-grid gap-5 d-md-block ms-3">
-                  <button class="btn btn-primary btn-rounded me-2" id="ordersButton" type="button">All Orders</button>
-                  <button class="btn btn-outline-secondary btn-rounded me-2" type="button">Shipped</button>
-                  <button class="btn btn-outline-secondary btn-rounded me-2" type="button">Processing</button>
-                  <button class="btn btn-outline-secondary btn-rounded" type="button">Cancelled</button>
-                  
-                </div>
-              </div>
-
-              <div class="container-fluid mt-5">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="py-3">Orders</h5>
-                    <div class="table-responsive">
-                    
-                    <table class="table table-hover">
-                      <thead class="table-light">
-                        <tr>
-                          <th scope="col">Order</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Customer</th>
-                          <th scope="col">Total</th>
-                          <th scope="col">Date</th>
-                        </tr>
-                      </thead>
-                      <tbody><!-- First row -->
-        <tr>
-          <th scope="row">#10423</th>
-          <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
-          <td>Johan D.</td>
-          <td>£140.99</td>
-          <td>05/05/2021</td>
-        </tr>
-        <!-- Second row -->
-        <tr>
-          <th scope="row">#10424</th>
-          <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
-          <td>Maria S.</td>
-          <td>£99.50</td>
-          <td>06/12/2021</td>
-        </tr>
-        <!-- Third row -->
-        <tr>
-          <th scope="row">#10425</th>
-          <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
-          <td>John Smith</td>
-          <td>£199.00</td>
-          <td>06/12/2021</td>
-        </tr>
-        <!-- Fourth row -->
-        <tr>
-          <th scope="row">#10426</th>
-          <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
-          <td>Lisa Brown</td>
-          <td>£75.25</td>
-          <td>06/12/2021</td>
-        </tr>
-        <!-- Fifth row -->
-        <tr>
-          <th scope="row">#10427</th>
-          <td><i class="fa-solid fa-circle processing"></i> Processing</td>
-          <td>Michael Johnson</td>
-          <td>£299.99</td>
-          <td>06/12/2021</td>
-        </tr>
-        <!-- Sixth row -->
-        <tr>
-          <th scope="row">#10428</th>
-          <td><i class="fa-solid fa-circle processing"></i> Processing</td>
-          <td>Emily Clark</td>
-          <td>£49.95</td>
-          <td>07/12/2021</td>
-        </tr>
-        <!-- Seventh row -->
-        <tr>
-          <th scope="row">#10429</th>
-          <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
-          <td>David White</td>
-          <td>£129.75</td>
-          <td>07/12/2021</td>
-        </tr>
-        <!-- Eighth row -->
-        <tr>
-          <th scope="row">#10430</th>
-          <td><i class="fa-solid fa-circle processing"></i> Processing</td>
-          <td>Sarah Taylor</td>
-          <td>£89.99</td>
-          <td>07/12/2021</td>
-        </tr>
-        <!-- Ninth row -->
-        <tr>
-          <th scope="row">#10431</th>
-          <td><i class="fa-solid fa-circle cancelled"></i> Cancelled</td>
-          <td>James Lee</td>
-          <td>£199.50</td>
-          <td>07/12/2021</td>
-        </tr>
-        <!-- Tenth row -->
-        <tr>
-          <th scope="row">#10432</th>
-          <td><i class="fa-solid fa-circle cancelled"></i> Cancelled</td>
-          <td>Anna King</td>
-          <td>£179.25</td>
-          <td>07/12/2021</td>
-        </tr>
-
-                      </tbody>
-                    </table>
+                  </div>
+    
+                  <div class="row mt-3">
+                    <div class="d-grid gap-5 d-md-block ms-3">
+                      <button class="btn btn-primary btn-rounded me-2" id="ordersButton" type="button">All Orders</button>
+                      <button class="btn btn-outline-secondary btn-rounded me-2" type="button">Shipped</button>
+                      <button class="btn btn-outline-secondary btn-rounded me-2" type="button">Processing</button>
+                      <button class="btn btn-outline-secondary btn-rounded" type="button">Cancelled</button>
                       
+                    </div>
                   </div>
-                    <p class="ms-2">All orders are updated every 30 seconds</p>
+    
+                  <div class="container-fluid mt-5">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="py-3">Orders</h5>
+                        <div class="table-responsive">
+                        
+                        <table class="table table-hover">
+                          <thead class="table-light">
+                            <tr>
+                              <th scope="col">Order</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Customer</th>
+                              <th scope="col">Total</th>
+                              <th scope="col">Date</th>
+                            </tr>
+                          </thead>
+                          <tbody><!-- First row -->
+            <tr>
+              <th scope="row">#10423</th>
+              <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
+              <td>Johan D.</td>
+              <td>£140.99</td>
+              <td>05/05/2021</td>
+            </tr>
+            <!-- Second row -->
+            <tr>
+              <th scope="row">#10424</th>
+              <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
+              <td>Maria S.</td>
+              <td>£99.50</td>
+              <td>06/12/2021</td>
+            </tr>
+            <!-- Third row -->
+            <tr>
+              <th scope="row">#10425</th>
+              <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
+              <td>John Smith</td>
+              <td>£199.00</td>
+              <td>06/12/2021</td>
+            </tr>
+            <!-- Fourth row -->
+            <tr>
+              <th scope="row">#10426</th>
+              <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
+              <td>Lisa Brown</td>
+              <td>£75.25</td>
+              <td>06/12/2021</td>
+            </tr>
+            <!-- Fifth row -->
+            <tr>
+              <th scope="row">#10427</th>
+              <td><i class="fa-solid fa-circle processing"></i> Processing</td>
+              <td>Michael Johnson</td>
+              <td>£299.99</td>
+              <td>06/12/2021</td>
+            </tr>
+            <!-- Sixth row -->
+            <tr>
+              <th scope="row">#10428</th>
+              <td><i class="fa-solid fa-circle processing"></i> Processing</td>
+              <td>Emily Clark</td>
+              <td>£49.95</td>
+              <td>07/12/2021</td>
+            </tr>
+            <!-- Seventh row -->
+            <tr>
+              <th scope="row">#10429</th>
+              <td><i class="fa-solid fa-circle shipped"></i> Shipped</td>
+              <td>David White</td>
+              <td>£129.75</td>
+              <td>07/12/2021</td>
+            </tr>
+            <!-- Eighth row -->
+            <tr>
+              <th scope="row">#10430</th>
+              <td><i class="fa-solid fa-circle processing"></i> Processing</td>
+              <td>Sarah Taylor</td>
+              <td>£89.99</td>
+              <td>07/12/2021</td>
+            </tr>
+            <!-- Ninth row -->
+            <tr>
+              <th scope="row">#10431</th>
+              <td><i class="fa-solid fa-circle cancelled"></i> Cancelled</td>
+              <td>James Lee</td>
+              <td>£199.50</td>
+              <td>07/12/2021</td>
+            </tr>
+            <!-- Tenth row -->
+            <tr>
+              <th scope="row">#10432</th>
+              <td><i class="fa-solid fa-circle cancelled"></i> Cancelled</td>
+              <td>Anna King</td>
+              <td>£179.25</td>
+              <td>07/12/2021</td>
+            </tr>
+    
+                          </tbody>
+                        </table>
+                          
+                      </div>
+                        <p class="ms-2">All orders are updated every 30 seconds</p>
+                      </div>
+                    </div> <!-- End of card-->
+                    <div class="mt-3 py-3 text-center">
+                      <p>&copy; Dashboard by KevsWebDev</p>
+                    </div>
                   </div>
-                </div> <!-- End of card-->
-                <div class="mt-3 py-3 text-center">
-                  <p>&copy; Dashboard by KevsWebDev</p>
                 </div>
               </div>
+             
             </div>
+          </div>
         </div>
-        <!-- End Main Content-->
       </div>
     </div>
 
