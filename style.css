@@ -53,11 +53,11 @@ i {
     height: 100%;
 }
 
-#revenue, #value {
+#revenue, #value, #drive {
   background-color: rgb(196, 162, 255);
 }
 
-#orders, #clients {
+#orders, #clients, #folder {
   background-color: aliceblue;
 }
 
@@ -69,6 +69,12 @@ i {
   background-color: rgb(247, 194, 213);
 }
 
+#percent {
+  background-color: rgb(244, 171, 214);
+  height: 100%;
+  width: 100%;
+
+}
 .card {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -111,7 +117,7 @@ a {
   color: black;
 }
 
-.gb-row {
+.cardRow {
   display: flex;
   justify-content: space-between;
 }
