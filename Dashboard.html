@@ -255,7 +255,7 @@ id="projects" aria-labelledby="projectDropdown">
                     <div class="row row-cols-2 row-cols-md-4 g-4">
                       <!-- First card -->
                       <div class="col">
-                        <div class="card mb-3" style="max-width: 540px;">
+                        <div class="card h-100 mb-3" style="max-width: 540px;">
                           <div class="row">
                             <div class="col">
                               <div class="cardImage align-items-center" id="drive">
@@ -283,7 +283,7 @@ id="projects" aria-labelledby="projectDropdown">
                       </div>
                         <!-- Second card -->
                         <div class="col">
-                          <div class="card mb-3" style="max-width: 540px;">
+                          <div class="card h-100 mb-3" style="max-width: 540px;">
                             <div class="row">
                               <div class="col">
                                 <div class="cardImage align-items-center" id="folder">
@@ -309,7 +309,7 @@ id="projects" aria-labelledby="projectDropdown">
     
                          <!-- Third card -->
                          <div class="col-md-6">
-                          <div class="card mb-3" style="max-width: 1080px;">
+                          <div class="card h-100 mb-3" style="max-width: 1080px;">
                             <div class="row">
                               <div class="col-3">
                                 <div class="cardImage align-items-center" id="percent">
@@ -322,9 +322,23 @@ id="projects" aria-labelledby="projectDropdown">
                             </div>
                            
                             <div class="card-body">
-                              <h5 class="card-title">Used Percentage</h5>
-                                  <p class="card-text">Check your storage on your dashboard</p>
-                            </div>
+                              <div class="row">
+                                  <div class="col">
+                                      <h5 class="card-title">Used Percentage</h5>
+                                      <p class="card-text">Check your storage on your dashboard</p>
+                                  </div>
+                                  <div class="col">
+                                      <div class="row">
+                                          <h3 class="text-center mb-3">55%</h3>
+                                      </div>
+                                        
+                                          <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                              <div class="progress-bar progress-bar-striped bg-danger" style="width: 55%; background-color: white;"></div>
+                                          </div>
+                                     
+                                  </div>
+                              </div>
+                          </div>
                           </div>                     
                         </div>
                         </div>
