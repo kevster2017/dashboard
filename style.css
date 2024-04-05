@@ -155,7 +155,8 @@ a {
 }
 
 #profileImageBackground {
-  height: 10%;
+  position: relative;
+  height: 300px;
   width: 100%;
-border-radius: 2%;
+border-radius: 8px;
 }
