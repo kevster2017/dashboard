@@ -154,4 +154,8 @@ a {
   margin-left: 20%;
 }
 
-
+#profileImageBackground {
+  height: 10%;
+  width: 100%;
+border-radius: 2%;
+}
