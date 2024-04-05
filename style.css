@@ -86,7 +86,7 @@ i {
       border-bottom-right-radius: 50px;
 }
 
-#ordersButton {
+#ordersButton, #profileButton {
 background-color: purple;
 }
 
