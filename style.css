@@ -176,7 +176,7 @@ border-radius: 8px;
 }
 
 .avatar {
-  width: 40%; /* Adjust as needed */
+  width: 50%; /* Adjust as needed */
   height: auto; /* Adjust as needed */
   border-radius: 50%; /* Ensures the avatar is circular */
   margin-right: 10px; /* Optional: Adds some space between avatar and text */
@@ -187,6 +187,7 @@ border-radius: 8px;
   color: white;
   display: flex; /* Use flexbox for text alignment */
   flex-direction: column; /* Stack text vertically */
+  margin-left: 85%;
 }
 
 .avatar-text .caption {
