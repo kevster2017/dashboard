@@ -154,15 +154,41 @@ a {
   margin-left: 20%;
 }
 
-#profileImageBackground {
+.profile-banner-wrapper {
+  position: relative;
+}
+
+#profileBanner {
   position: relative;
   height: 300px;
   width: 100%;
 border-radius: 8px;
 }
 
-.avatarBackground{
-  position: relative;
-  height: 10%;
-  width: auto;
+.avatar-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.avatar {
+  width: 40%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  border-radius: 50%; /* Ensures the avatar is circular */
+  margin-right: 10px; /* Optional: Adds some space between avatar and text */
+  
+}
+
+.avatar-text {
+  color: white;
+  display: flex; /* Use flexbox for text alignment */
+  flex-direction: column; /* Stack text vertically */
+}
+
+.avatar-text .caption {
+  margin-bottom: 5px; /* Add space between caption and name */
 }
