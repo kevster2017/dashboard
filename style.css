@@ -160,3 +160,9 @@ a {
   width: 100%;
 border-radius: 8px;
 }
+
+.avatarBackground{
+  position: relative;
+  height: 10%;
+  width: auto;
+}
