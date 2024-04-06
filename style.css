@@ -242,9 +242,24 @@ padding-left: 2%;
  .postInteractionBar {
   display: flex;
   align-items: center;
+  margin-left: 5%;
+  padding-bottom: 3%;
  }
 
- .repost, .comments, .share{
+ .icon-text {
+  margin-left: 7px; 
+}
+
+ .repost, .comments {
   display: flex;
   align-items: center;
  }
+
+ .share {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-right: 12%;
+  
+ }
+
