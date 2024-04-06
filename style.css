@@ -193,3 +193,8 @@ border-radius: 8px;
 .avatar-text .caption {
   margin-bottom: 5px; /* Add space between caption and name */
 }
+
+.profile-details{
+  display: flex;
+  justify-content: space-between;
+}
