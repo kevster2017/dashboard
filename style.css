@@ -198,3 +198,9 @@ border-radius: 8px;
   display: flex;
   justify-content: space-between;
 }
+
+#postImage {
+  height: 30%;
+  width: 100%;
+  border-radius: 2px;;
+}
