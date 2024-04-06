@@ -239,3 +239,12 @@ padding-left: 2%;
    padding: 5%;
  }
  
+ .postInteractionBar {
+  display: flex;
+  align-items: center;
+ }
+
+ .repost, .comments, .share{
+  display: flex;
+  align-items: center;
+ }
