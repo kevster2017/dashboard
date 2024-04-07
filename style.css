@@ -211,6 +211,12 @@ padding-left: 2%;
   
 }
 
+.post-largeText {
+  padding-left: 5%;
+  padding-right: 7%;
+  
+}
+
 .postDetails{
   margin-left: 3%;
   align-items: center;
