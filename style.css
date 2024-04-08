@@ -199,9 +199,12 @@ border-radius: 8px;
 
 .postAvatar{
   height: 80px; 
-  width: auto; /* Maintain aspect ratio */
+  width: 80px;
 display: flex;
-padding-left: 2%;
+align-items: center; /* Align content vertically */
+justify-content: center; /* Align content horizontally*/
+margin-left: 2%;
+border-radius: 50%;
 }
 
 
