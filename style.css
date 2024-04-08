@@ -253,7 +253,15 @@ border-radius: 50%;
   display: flex;
   align-items: center;
   float: right;
-  margin-right: 12%;
-  
+  margin-right: 12%;  
  }
 
+ .teamCards {
+  display: flex;
+  justify-content: center;
+ }
+
+ .viewAll{
+  text-decoration: solid;
+  color: purple;
+ }
