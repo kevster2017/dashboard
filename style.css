@@ -263,5 +263,17 @@ border-radius: 50%;
 
  .viewAll{
   text-decoration: solid;
-  color: purple;
+  color: blue;
  }
+
+ .projectListLogo {
+  display: flex;
+  align-items: center;
+}
+
+.projectImage {
+  height: 64px;
+  width: auto;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
