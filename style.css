@@ -280,3 +280,12 @@ border-radius: 50%;
   margin-right: 10px; /* Adjust margin as needed */
 }
 
+@media only screen and (max-width: 992px) {
+  .profile-details, .postDetails {
+      white-space: nowrap; /* Prevent text wrapping */
+      overflow: hidden; /* Hide overflowing text */
+      text-overflow: ellipsis; /* Show ellipsis for overflow text */
+     
+  }
+}
+
